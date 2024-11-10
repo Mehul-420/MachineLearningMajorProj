@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <!-- Updated title -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-900 text-gray-400">
+    <div class="container mx-auto px-5 py-24">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+          Loan Prediction Result
+        </h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          Based on the provided information, your loan application is:
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <div class="bg-gray-800 p-10 rounded-lg shadow-lg">
+          <h2 class="text-4xl font-bold text-center text-indigo-500">
+            {{ prediction }}
+          </h2>
+          <div class="mt-6 text-center">
+            <a href="/" class="text-indigo-400 hover:text-indigo-500"
+              >Go Back</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
